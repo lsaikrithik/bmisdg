@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageview"
+        android:layout_width="247dp"
+        android:layout_height="163dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="109dp"
+        android:padding="10dp"
+        android:src="@drawable/bmisgd">
+
+    </ImageView>
+
+    <RelativeLayout
+        android:id="@+id/contentlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="30dp"
+
+        android:padding="20dp">
+
+
+        <TextView
+            android:id="@+id/bmi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:text="BMI WITH DIETPLAN "
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bmi"
+            android:layout_marginTop="50dp"
+            android:hint="User Name"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:textStyle="bold">
+
+        </EditText>
+
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/username"
+            android:layout_marginTop="50dp"
+            android:hint="Password"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:textStyle="bold">
+
+        </EditText>
+
+        <EditText
+            android:id="@+id/repassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/password"
+            android:layout_marginTop="50dp"
+            android:hint="Retype Pasword"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:textStyle="bold">
+
+        </EditText>
+
+
+        <Button
+            android:id="@+id/signup"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/repassword"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/buttonbackground"
+            android:text="Register"
+            android:textColor="@color/white"
+            android:textStyle="bold"></Button>
+
+        <Button
+            android:id="@+id/signin"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/signup"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/buttonbackground"
+            android:text="Existing User? Go to Signin Page"
+            android:textColor="@color/white"
+            android:textStyle="bold"></Button>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
